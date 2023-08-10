@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@font-face{
+	font-family:'Nimbus';
+	src:url(../fonts/Nimbus.woff);s
+}
+@font-face{
+	font-family:'Nimbus2';
+	src:url(../fonts/Nimbus2.woff);
+}
+@font-face{
+	font-family:'Nimbus3';
+	src:url(../fonts/Nimbus3.woff);
+}
+@font-face{
+	font-family:'FREESCPT';
+	src:url(../fonts/FREESCPT.woff);
+}
+*{
+	padding: 0px; margin:0px; flex-wrap: wrap; box-sizing:border-box;
+}
+.clear{clear:both;}
+:root{
+	--blue:#2d56d6;
+	--yellow:#ffe500;
+}
+.container-fluid.head{background-color:#3e518a; background-size:cover;}
+.container-fluid.main{
+	background:linear-gradient(0deg,rgba(0,0,0,0),rgba(62,77,134,0.9)),url(../img/home-banner.jpg) center; 
+	 background-size:cover; background-repeat:no-repeat;
+}
+
+.fon-mon{
+	font-family:''Montserrat' ,'sans-serif'';
+}
+.fon-nimbus1{
+	font-family:'Nimbus';
+}
+.fon-nimbus2{
+	font-family:'Nimbus2';
+}
+.fon-nimbus3{
+	font-family:'Nimbus3';
+}
+.lato{
+	font-family:''Lato', 'sans-serif'';
+}
+.tel, .quote, .contact{
+	font-size:12px; font-weight: bold; font-family:''Montserrat', 'sans-serif'';
+}
+.quote{
+	color:#e5ce01;  border:1px solid #e5ce01; border-radius:25px; font-weight:600;
+}
+.quote:hover{
+	background:#e5ce01; color:var(--blue);
+}
+.contact{
+	border-radius:25px; background:var(--blue); border: 1px transparent solid;
+}
+
+.container-fluid.navigate{
+	background:var(--yellow); font-family:'Nimbus3', Helvetica, Arial, 'sans-serif'; width:100%; position:sticky; top:-0.3px; left:0px; z-index:999;
+}
+.navbar{padding:0px;}
+.nav-item .nav-link{
+	font-size:12px; font-weight:bold; padding:20px !important;
+}
+.welcome{
+	width:53%; padding-top:150px; padding-bottom:150px; font-family:'Nimbus2', Helvetica, Arial, 'sans-serif';
+}
+.nav-item.dropdown{position:relative;}
+.welcome p{line-height:35px; font-size:25px;}
+.sub-menu{
+	display:none; font-size:12px; background:#ffc600; list-style:none; width:280px;
+	 font-family:'Montserrat' ,'sans-serif'; font-weight:800; color:#303439;}
+.sub-menu li a{color:#303439; text-decoration: none;}
+.sub-menu li{padding:11px; border:1px solid #ffcc00; border-color: transparent transparent #ffcc00 transparent;}
+.sub-menu li:last-child{border:none;}
+.sub-menu-btn{display:none;padding:0px 20px 0px 50px;}
+.dn{font-size:18px; color:#5f5f5f;}
+.dn-con{border:2px dashed var(--yellow);}
+.content-2 .enquiry{color:#d90101; font-size:20px; font-weight:900; line-height:35px; }
+.content-2{
+	border: solid 7px white; box-shadow: 0 0 9px rgb(0 0 0 /30%); font-family:'Nimbus2', Helvetica, Arial, 'sans-serif'; font-size:15px; border-radius:10px;
+	background:white;
+	position:relative; top:-15px; left:0px; z-index:99;
+}
+.content-2 input, textarea{background:#fbfbfb; color:#666; width:100%; border:#ddd 1px solid; height:40px;}
+.content-2 textarea{width:80%;}
+.submit-btn{background:#f7ba09; border-radius:5px; border:none; color:#ab0000;
+			 font-size:18px; font-family:Ubuntu;} 
+.g-recaptcha{overflow: hidden;}
+.g-recaptcha img{width:90%; padding:2px;}
+.content-1{position:relative;}
+.disnepal{font-family:'FREESCPT'; font-weight:bolder; text-shadow:0 2px 0 #999; color:var(--yellow); padding: 0 8px;
+		position:absolute; top:-60px; font-size:100px; z-index:10; width:100%;}
+
+.disnepal::before{content:'DISCOVER NEPAL'; font-size:100px; color:white; background:none; font-family:'FREESCPT'; padding: 0 8px;
+				 font-weight:bolder; z-index:99; height:40%; overflow:hidden; position:absolute; top:0px; left:0px; overflow:hidden; width:100%;
+}
+.hot-selling h1{
+	font-family:'Lato', sans-serif; font-weight:300; font-size:40px;
+}
+.hot-selling h1 strong{
+	font-weight:bold;
+}
+.hot-selling p{
+	font-family:'Open Sans', sans-serif; font-size:16px; border-left:3px solid black; 
+}
+.bgw{
+	width:95%;height:10px; background:white; position:absolute; top:-5px;
+}
+.menu-btn{
+	 background:transparent; border:1px solid #333; border-radius:5px; float:right; padding:0px 8px !important; display:none; font-size:22px;
+}
+.menu-icon{padding:8px !important;}
+.menu-btn:hover{
+	background:black;
+}
+
+
+.vn-details p{
+	font-family:''Open Sans', 'sans-serif''; height:auto;
+}
+.vn-details{background:white; font-size:100%; width:100%; height:100% !important; }
+.vn-image-right img, .vn-image-left img{width:100%; height:100% !important; }
+.vn-details{border:2px dashed var(--yellow);}
+.vn-image-left, .vn-image-right{background:var(--yellow); width:100% height:100%; width:200%;} 
+.vn-image-left img{margin-left:-20px;}
+.vn-image-right img{margin-left:20px;}
+.vn-image-left img, .vn-image-right img{padding:0px 0px !important; width:100%; height:100% !important; }
+.nepal-package{
+	background:linear-gradient(to right, rgba(104,125,167,0.7) 0%, rgba(104,125,167,0.7) 100%), url(../img/nepal-tour-packages-by-theme-bg.jpg) no-repeat #687da7;
+	background-size:cover;
+}
+.packages-image{margin-bottom:10px; overflow:hidden;  position:relative;}
+.packages-image img{transition: 0.3s;}
+.nep-pack{font-size:18px !important;}
+.packages-image .text{
+	position:absolute; bottom:20px; left:0px; padding:0% 5%; background:rgba(0,43,100,.9); z-index:99;
+	 color:white; width:100%;
+}
+
+.packages-image .text h5{ font-family:'Lato', sans-serif; font-size:15px; padding:5px 0px 0px 0px !important; 
+}
+.packages-image .text h5 span{
+	font-family:'FREESCPT'; text-shadow:0 2px 0 black; font-weight:400; color:var(--yellow); font-size:30;
+	
+}
+
+/*.images{padding:0px !important; margin:0px !important;}
+.images a img{width:100%; height:auto; padding:0px !important;}
+.row.tour-packages .col-sm-2, .col-sm-4{padding:5px !important; margin:0px !important;}*/
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:992px){
+	.vn-image-left img, .vn-image-right img{padding:20px 0px  20px 0px !important;}
+	.sub-menu li:hover{background:white;}
+	.nav-item .nav-link:hover{background:#ffc600;}
+	.nav-item.dropdown:hover .sub-menu{display:block !important; position:absolute; top:57px; left:0; z-index:99;}
+
+}
+@media (max-width:1600px){
+	.row.no-gutters .col-md-4{background:var(--yellow);}
+}
+@media (min-width:992px) and (max-width:1200px){
+	.nav-item .nav-link{padding:12px !important;}
+	.nav-item.dropdown:hover .sub-menu{display:block; position:absolute; top:40px; left:0; z-index:99;}
+}
+
+@media screen and (max-width: 991px){
+	.vn-details p{font-size:15px;}
+	.hot-selling h1{font-size:35px;}
+	.brand-logo, .right-infos{width:100%;}
+	.right-infos{
+		display:flex; justify-content:space-between ; padding-top:10px;
+	}
+	.dn{font-size:18px; font-weight:500; word-spacing:4px;}
+	.tel, .quote, .contact{
+	font-size:10px; margin:2px 0px 2px;
+
+}
+	.welcome{width:100%; padding:10px 2px;
+}
+.welcome p{font-size:18px; line-height:25px;}
+.welcome h1{font-size:20px;}
+.nav-item .nav-link{padding:10px !important; float:left;}
+
+.sub-menu-btn{float:right; display:block;}
+.sub-menu{padding:2px;}
+.dn{font-size:15px;}
+.disnepal{font-family:'FREESCPT' !important; font-weight:bolder; text-shadow:0 2px 0 #999; color:var(--yellow); padding: 0 8px;
+		position:absolute; top:-30px; font-size:50px; z-index:10; width:100%;}
+.disnepal::before{content:'DISCOVER NEPAL'; font-size:50px; color:white; background:none; font-family:'FREESCPT'; padding: 0 8px;
+				 font-weight:bolder; z-index:99; height:40%; overflow:hidden; position:absolute; top:0px; left:0px; overflow:hidden; width:100%;}
+
+.container.d-flex.justify-content-between.flex-row-reverse .btn-menu{display:none;}
+.menu-btn{display:block !important;}
+}
+
+@media screen and (max-width:375px){
+	.disnepal{font-family:'FREESCPT' !important; font-weight:bolder; text-shadow:0 2px 0 #999; color:var(--yellow); padding: 0 8px;
+		position:absolute; top:-20px; font-size:30px; z-index:10; width:100%;}
+.disnepal::before{content:'DISCOVER NEPAL'; font-size:30px; color:white; background:none; font-family:'FREESCPT'; padding: 0 8px;
+				 font-weight:bolder; z-index:99; height:40%; overflow:hidden; position:absolute; top:0px; left:0px; overflow:hidden; width:100%;
+}
+
+}
+@media screen and (max-width:575px){
+	.hot-selling h1{font-size:30px;}
+	.hot-selling p{border:none; padding-left:0px !important;}
+	.main-logo{width:55%;}
+	.menu-icon{padding:5px !important;}
+}
+
+
+@media screen and (max-width:767px){
+
+	.vn-image-left, .vn-image-right{line-height:0px; background:transparent; margin:0px !important; padding:0px !important; background:var(--yellow);}
+	.row.no-gutters .col-md-4{background:transparent;}
+	.vn-image-right img{margin:0px 0px 0px 0px!important; padding:0px 5px 0px 10px !important; display:block !important;}
+	.vn-image-left img{margin:0px 0px 0px 0px!important; padding:5px 5px 0px 10px !important; display:block !important;}
+	.vn-details{padding:10px;}
+	.vn-image-right{
+		margin-bottom:10px !important;
+	}
+}
+@media screen and (min-width:767px){
+.packages-image:hover img{transform: scale(1.5);}
+}

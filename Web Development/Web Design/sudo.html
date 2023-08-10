@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		p:first-letter{color:green; font-size:50px;}
+		p:first-child{background:yellow;}
+		p:last-child{background:pink;}
+		a:active{background:blue; color:red; font-size:50px;}
+		p:nth-child(3){background:blue; color:red;}
+		p:nth-child(1), p:nth-child(2){background:orange;}
+		a:before{content:'Click this link: '; background:grey; color:yellow;}
+		a:before{content:'Linked'; position:absolute; top:0px; left:20px; font-size:2px;}
+		ul li a{background:yellow; color:red; padding:30px;}
+		.hhh{width:500px; height:500px; border:black solid 2px; position:relative; background:red;}
+		.hh{width:50%; height:10px; background:pink; position:absolute; top:50%; right:30%;}
+		.text-css{border:5px red solid; width:100px; height:50px; white-space:nowrap; overflow:hidden; text-overflow:clip;}
+		.text-css:hover{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+		.text-css:active{height:unset; overflow:hidden; white-space:normal; text-overflow:clip; }
+		.text-css2{border:5px blue solid; width:100px; height:50px; white-space:nowrap; overflow:hidden; text-overflow:clip;}
+		.text-css2:hover{width:unset; overflow:hidden; white-space:nowrap; text-overflow:clip;}
+		.text-css3{border:5px blue solid; width:100px; height:50px; white-space:nowrap; overflow:hidden; text-overflow:clip;}
+		.text-css3:hover{width:unset; overflow:hidden; white-space:nowrap; text-overflow:clip;}
+		.big{width:200px; height:200px; background:blue; color:white;}
+		.big:hover .kk{font-size:100px;}
+		h1{background-color: yellow; display:inline;}
+
+	</style>
+</head>
+<body>
+	<p style = "direction:ltr; word-break:keep-all;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p style = "direction:rtl; letter-spacing:2px; word-break:break-all;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p style = "word-spacing:5px;text-indent:15cm;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p style = "text-align:center; text-decoration:blink; text-transform:capitalize;">hari shah</p>
+	<p style = "text-align:right; text-transform:uppercase; text-shadow:0px 20px 0px yellow;">hari shah</p>
+	<p style = "text-align:left; text-transform:lowercase">hari shah</p>
+	<p class = "text-css2">Hello everyone my name is Hari Krishna Shah. I live in sindhuli madhi.</p>
+	<p class = "text-css3">Hello everyone my name is Hari Krishna Shah. I live in sindhuli madhi. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+	<a href="#">Google</a><br>
+	<a href="#">Yahoo</a><br>
+	<a href="#">Bing</a><br>
+
+	<div class = "hhh">
+		<ul>
+			<li><a href = "#"> Hari Shah</a></li>
+		</ul>
+		<div class = "hh"></div>
+	</div>
+	<div class = "big"><p>Ha<span class = "kk">r</span>i Shah</p></div>
+
+	<h1>Hari Krishna Shah</h1>
+
+
+
+</body>
+</html>

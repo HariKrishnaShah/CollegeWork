@@ -1,0 +1,28 @@
+.sub-1, .main .sub-2, .sub-3 {
+  background: orange; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+.main {
+  width: 800px;
+  background: black;
+  height: 800px; }
+  .main .sub-1, .main .sub-2, .main .sub-3 {
+    width: 300px;
+    height: 200px +100px; }
+  .main .sub-2 {
+    background: blue;
+    color: yellow;
+    text-align: center;
+    line-height: 200px; }
+    .main .sub-2:hover {
+      background: red; }
+
+.sub-3 {
+  width: 400px;
+  height: 400px;
+  color: red; }
+
+/*# sourceMappingURL=index.css.map */

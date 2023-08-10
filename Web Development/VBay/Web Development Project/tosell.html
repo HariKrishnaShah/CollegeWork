@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product Catalog</title>
+    <link rel = "stylesheet" href = "css/cssfile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+  .productz
+  {
+  width:40%;
+  border: 1px solid #ccc;
+  padding: 40px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px #ccc;
+}
+
+  .btn
+  {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+  .submitad
+  {
+    padding:5px; font-size:15px; margin-top:10px;
+  }
+  </style>
+  </head>
+  <body>
+    <div class = "l">
+    <div id = "navbar">
+        <a href = "index.html"><img src = "img/vbay.png" id = "logo"></a>
+        <div id = "search-box">
+          <input type = "text" name = "search" id = "search" placeholder = "Search Anything">
+          <a href = "#"><i class="fa fa-search" aria-hidden="true"></i></a>
+        </div>
+        <div id = "ad-post">
+          <a href = "tosell.html"><span class ="center">Post ad<span id = "plus-icon"><i class="fa fa-plus-square-o" aria-hidden="true"></i></span></span></a>
+        </div>
+        <div id = "login" class = "navitem">
+          <a href = "login.html" class= "navtext">Login</a>
+        </div>
+        <div class = "navitem" id = "register">
+          <a href = "signup.html" class= "navtext">Register</a>
+        </div>
+    </div>
+    <h1 style="text-align: center ">VIT-BAY SELLING PLATFORM</h1>
+    <p> Sell your products faster through VBay. List your item now.</p>
+    <h2>Product Details</h2>
+    
+    <div class="productz">
+      <form>
+        <h3>Product A</h3>
+      <label for="Product Name"> <b>Product Name:</b> </label>
+      <input type="text" id="prodname" placeholder="Product name"><br><br>
+
+      <label for="Product type"><b>Select Product Type:</b></label>
+      <select name="Prod type" id= "prodtype">
+      <option value="Electronics">Electronics</option>
+      <option value="Daily usage goods">Daily usage</option>
+      <option value="Furniture">Furniture</option>
+      <option value="Sports">Sports</option>
+      <option value="Food">Food</option>
+      <option value="Education">Education</option>
+      </select><br><br>
+      
+      <label for="description"><b>Product Description:</b></label><br>
+      <textarea id="description" name="desc" rows = "5" cols = "40"></textarea><br><br>
+
+      <label for="Product Price"><b>Enter Price:</b></label>
+      <input type="number" id="price" placeholder="INR"><br><br>
+
+      <button class="btn" >UPLOAD PRODUCT IMAGE</button><br>
+      <input type = "submit" value = "Post Ad" class = "submitad">
+      </form>
+      
+    </div>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ques 4.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="SynEdit HTML exporter" />
+<style type="text/css">
+<!--
+body { color: #000000; background-color: #FFFFFF; }
+.cpp1-assembler { color: #0000FF; }
+.cpp1-character { color: #000000; }
+.cpp1-comment { color: #0078D7; font-style: italic; }
+.cpp1-float { color: #800080; }
+.cpp1-hexadecimal { color: #800080; }
+.cpp1-identifier { color: #000000; }
+.cpp1-illegalchar { color: #000000; }
+.cpp1-number { color: #800080; }
+.cpp1-octal { color: #800080; }
+.cpp1-preprocessor { color: #008000; }
+.cpp1-reservedword { color: #000000; font-weight: bold; }
+.cpp1-space { background-color: #FFFFFF; color: #000000; }
+.cpp1-string { color: #0000FF; font-weight: bold; }
+.cpp1-symbol { color: #FF0000; font-weight: bold; }
+-->
+</style>
+</head>
+<body>
+<pre>
+<code><span style="font: 11pt Consolas;"><span class="cpp1-preprocessor">#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+</span><span class="cpp1-reservedword">struct</span><span class="cpp1-space"> student</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">char</span><span class="cpp1-space"> name</span><span class="cpp1-symbol">[</span><span class="cpp1-number">100</span><span class="cpp1-symbol">];
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> marks</span><span class="cpp1-symbol">[</span><span class="cpp1-number">3</span><span class="cpp1-symbol">];
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">char</span><span class="cpp1-space"> grade</span><span class="cpp1-symbol">[</span><span class="cpp1-number">3</span><span class="cpp1-symbol">];
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">float</span><span class="cpp1-space"> aggregate</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">};
+</span><span class="cpp1-reservedword">void</span><span class="cpp1-space"> display</span><span class="cpp1-symbol">(</span><span class="cpp1-reservedword">struct</span><span class="cpp1-space"> student temp</span><span class="cpp1-symbol">);
+</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> main</span><span class="cpp1-symbol">(){
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> size</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> temp1 </span><span class="cpp1-symbol">=</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> temp2 </span><span class="cpp1-symbol">=</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-space"> </span><span class="cpp1-symbol">,</span><span class="cpp1-identifier">count </span><span class="cpp1-symbol">=</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> count2 </span><span class="cpp1-symbol">=</span><span class="cpp1-space"> </span><span class="cpp1-number">1</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">char</span><span class="cpp1-space"> search</span><span class="cpp1-symbol">[</span><span class="cpp1-number">100</span><span class="cpp1-symbol">];
+</span><span class="cpp1-space">	printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;Enter the number of students: &quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	scanf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;%d&quot;</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-symbol">&amp;</span><span class="cpp1-identifier">size</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-reservedword">struct</span><span class="cpp1-space"> student s</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">size</span><span class="cpp1-symbol">];
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-reservedword">for</span><span class="cpp1-symbol">(</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> i </span><span class="cpp1-symbol">=</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">;</span><span class="cpp1-space"> i</span><span class="cpp1-symbol">&lt;</span><span class="cpp1-identifier">size</span><span class="cpp1-symbol">;</span><span class="cpp1-space"> i</span><span class="cpp1-symbol">++){
+</span><span class="cpp1-space">		printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;Enter the details of student number %d below.\n&quot;</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> i</span><span class="cpp1-symbol">+</span><span class="cpp1-number">1</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">		printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;Enter the name of student: &quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">		scanf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;%s&quot;</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-symbol">&amp;</span><span class="cpp1-identifier">s</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">i</span><span class="cpp1-symbol">].</span><span class="cpp1-identifier">name</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">		printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;Enter the marks obtained in 3 subjects: &quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">for</span><span class="cpp1-symbol">(</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> j </span><span class="cpp1-symbol">=</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">;</span><span class="cpp1-space"> j</span><span class="cpp1-symbol">&lt;</span><span class="cpp1-number">3</span><span class="cpp1-symbol">;</span><span class="cpp1-space"> j</span><span class="cpp1-symbol">++){
+</span><span class="cpp1-space">			scanf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;%d&quot;</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-symbol">&amp;</span><span class="cpp1-identifier">s</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">i</span><span class="cpp1-symbol">].</span><span class="cpp1-identifier">marks</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">j</span><span class="cpp1-symbol">]);
+</span><span class="cpp1-space">		</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">		printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;\n&quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">for</span><span class="cpp1-symbol">(</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> j </span><span class="cpp1-symbol">=</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">;</span><span class="cpp1-space"> j</span><span class="cpp1-symbol">&lt;</span><span class="cpp1-identifier">size</span><span class="cpp1-symbol">;</span><span class="cpp1-space"> j</span><span class="cpp1-symbol">++){
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">for</span><span class="cpp1-symbol">(</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> i </span><span class="cpp1-symbol">=</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">;</span><span class="cpp1-space"> i</span><span class="cpp1-symbol">&lt;</span><span class="cpp1-number">3</span><span class="cpp1-symbol">;</span><span class="cpp1-space"> i</span><span class="cpp1-symbol">++){
+</span><span class="cpp1-space">			temp1 </span><span class="cpp1-symbol">+=</span><span class="cpp1-space"> s</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">j</span><span class="cpp1-symbol">].</span><span class="cpp1-identifier">marks</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">i</span><span class="cpp1-symbol">];
+</span><span class="cpp1-space">			</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">			temp2 </span><span class="cpp1-symbol">=</span><span class="cpp1-space"> temp1</span><span class="cpp1-symbol">/</span><span class="cpp1-number">3</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">			s</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">j</span><span class="cpp1-symbol">].</span><span class="cpp1-identifier">aggregate </span><span class="cpp1-symbol">=</span><span class="cpp1-space"> temp2</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">			</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">temp2 </span><span class="cpp1-symbol">&gt;</span><span class="cpp1-number">90</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">				strcpy</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">s</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">j</span><span class="cpp1-symbol">].</span><span class="cpp1-identifier">grade</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-string">&quot;A+&quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">			</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">			</span><span class="cpp1-reservedword">else</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">temp2 </span><span class="cpp1-symbol">&gt;</span><span class="cpp1-number">80</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">				strcpy</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">s</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">j</span><span class="cpp1-symbol">].</span><span class="cpp1-identifier">grade</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-string">&quot;A&quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">			</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">			</span><span class="cpp1-reservedword">else</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">temp2 </span><span class="cpp1-symbol">&gt;</span><span class="cpp1-number">70</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">				strcpy</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">s</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">j</span><span class="cpp1-symbol">].</span><span class="cpp1-identifier">grade</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-string">&quot;B+&quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">			</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">			</span><span class="cpp1-reservedword">else</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">temp2 </span><span class="cpp1-symbol">&gt;</span><span class="cpp1-number">60</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">				strcpy</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">s</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">j</span><span class="cpp1-symbol">].</span><span class="cpp1-identifier">grade</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-string">&quot;B&quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">			</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">			</span><span class="cpp1-reservedword">else</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">temp2 </span><span class="cpp1-symbol">&gt;</span><span class="cpp1-number">50</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">				strcpy</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">s</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">j</span><span class="cpp1-symbol">].</span><span class="cpp1-identifier">grade</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-string">&quot;C+&quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">			</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">			</span><span class="cpp1-reservedword">else</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">temp2 </span><span class="cpp1-symbol">&gt;</span><span class="cpp1-number">40</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">				strcpy</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">s</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">j</span><span class="cpp1-symbol">].</span><span class="cpp1-identifier">grade</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-string">&quot;C&quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">			</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">			</span><span class="cpp1-reservedword">else</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">				strcpy</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">s</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">j</span><span class="cpp1-symbol">].</span><span class="cpp1-identifier">grade</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-string">&quot;C&quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">				count </span><span class="cpp1-symbol">+=</span><span class="cpp1-space"> </span><span class="cpp1-number">1</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">			</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">			temp1 </span><span class="cpp1-symbol">=</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">count </span><span class="cpp1-symbol">==</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">		printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;There is no one in the class whose agrregate is below 40.\n\n&quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">else</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">		printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;This are the students whose aggregate is less than 40.\n&quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">for</span><span class="cpp1-symbol">(</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> i </span><span class="cpp1-symbol">=</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">;</span><span class="cpp1-space"> i</span><span class="cpp1-symbol">&lt;</span><span class="cpp1-identifier">size</span><span class="cpp1-symbol">;</span><span class="cpp1-space"> i</span><span class="cpp1-symbol">++){
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">s</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">i</span><span class="cpp1-symbol">].</span><span class="cpp1-identifier">aggregate</span><span class="cpp1-symbol">&lt;</span><span class="cpp1-number">40</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">			printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;%d. %s\n&quot;</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> count2</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> s</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">i</span><span class="cpp1-symbol">].</span><span class="cpp1-identifier">name</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">			count2 </span><span class="cpp1-symbol">+=</span><span class="cpp1-space"> </span><span class="cpp1-number">1</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">		</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;\n&quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	
+	
+	printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;Enter the name of student to search: &quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	scanf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;%s&quot;</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-symbol">&amp;</span><span class="cpp1-identifier">search</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">for</span><span class="cpp1-symbol">(</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> i </span><span class="cpp1-symbol">=</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">;</span><span class="cpp1-space"> i</span><span class="cpp1-symbol">&lt;</span><span class="cpp1-identifier">size</span><span class="cpp1-symbol">;</span><span class="cpp1-space"> i</span><span class="cpp1-symbol">++){
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">strcmp</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">s</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">i</span><span class="cpp1-symbol">].</span><span class="cpp1-identifier">name</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> search</span><span class="cpp1-symbol">)</span><span class="cpp1-space"> </span><span class="cpp1-symbol">==</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">			display</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">s</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">i</span><span class="cpp1-symbol">]);
+</span><span class="cpp1-space">		</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}
+
+
+}
+
+</span><span class="cpp1-reservedword">void</span><span class="cpp1-space"> display</span><span class="cpp1-symbol">(</span><span class="cpp1-reservedword">struct</span><span class="cpp1-space"> student temp</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">	printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;The details of the student is given below.\n&quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;Name: %s\n&quot;</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> temp</span><span class="cpp1-symbol">.</span><span class="cpp1-identifier">name</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">for</span><span class="cpp1-symbol">(</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> j </span><span class="cpp1-symbol">=</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">;</span><span class="cpp1-space"> j</span><span class="cpp1-symbol">&lt;</span><span class="cpp1-number">3</span><span class="cpp1-symbol">;</span><span class="cpp1-space"> j</span><span class="cpp1-symbol">++){
+</span><span class="cpp1-space">			printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;Marks for subject number %d: %d\n&quot;</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> j</span><span class="cpp1-symbol">+</span><span class="cpp1-number">1</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> temp</span><span class="cpp1-symbol">.</span><span class="cpp1-identifier">marks</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">j</span><span class="cpp1-symbol">]);
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;Grade: %s\n&quot;</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> temp</span><span class="cpp1-symbol">.</span><span class="cpp1-identifier">grade</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;Aggregate: %.0f%%.\n&quot;</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> temp</span><span class="cpp1-symbol">.</span><span class="cpp1-identifier">aggregate</span><span class="cpp1-symbol">);
+}
+</span></span>
+</code></pre>
+</body>
+</html>

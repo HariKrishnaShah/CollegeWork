@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+
+
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	text-decoration:none;
+}
+
+
+
+
+body{
+
+	background:url(../img/bg.jpg);
+	background-repeat:repeat-x;
+	background:#c0c0c0;
+
+
+}
+	.container{width:950px; margin:auto; background:white;}
+
+	.top-banner{width:950px; text-align:left; border-bottom:solid 12px #d7d7d7; height:148px;}
+	.main-img{
+
+		float:left;
+	}
+
+	.contact{
+			 float:right; padding:10px; text-align: right; font-weight:bold; font-family: 'Roboto', sans-serif;
+	}
+	.contact p a{
+		color:#293977;
+	}
+	.contact p a:hover{
+		color:#a86629; text-decoration:underline;
+	}
+	.clearfix{clear:both;}
+
+
+	nav{float:right; padding-top:15px; }
+
+	.active a{color:#a86629; background:#d7d7d7;}
+
+	nav ul{list-style:none;}
+
+	nav ul li{float:left;}
+
+	nav ul li a{padding:10px 15px;  font-family:'Roboto', sans-serif; font-weight:lighter;  background:#054470; color:white; border-left: 2px solid white; }
+
+	.slider img{width:950px; padding-bottom:20px;}
+	.content-left{float:left; border-right: dotted 2px black; width:70%; padding:20px; box-sizing:border-box;}
+		
+	.content-right{float:right; width:30%; padding:20px; box-sizing:border-box;}
+
+	.content-left p{font-family: 'Open Sans', sans-serif; font-weight:lighter; font-size:15px; line-height:normal; text-align:left;}
+
+	.content-right ul{list-style:none; line-height:30px;}
+
+	.content-left h2{
+		color:#0f77be; text-shadow:0 0 4px #bbb;
+	}
+	.content-right h2{
+		color:#0f77be; text-shadow:0 0 4px #bbb;
+	}
+	.content-right ul li a{font-weight:bold; font-size:18px; text-shadow: 0px 1px 1px; color:#04447d;}
+	.content-right ul li a:hover{text-decoration: underline; color:#a86629;}
+
+	.content{padding-bottom:25px;}
+
+	.end{background:#044470; padding-bottom:5px; padding-top:5px;}
+	.endleft{color:white; float:left; text-align:left; padding-left:20px;}
+	.endright{color:white; float:right; text-align:right; padding-right:20px;}
+
+
+	form input{
+		border-radius:10px; padding:10px;
+	}
+
+
+	.name input, .Email input{
+		width:240px; height:40px; margin:10px;
+	}
+
+	.comment textarea{
+		width:240px; height:140px; padding:10px;
+	}
+
+	.submit input, .reset input{padding:10px; border-radius:0px;}
+	.submit{float:left;}
+	.reset{float:left; margin-left:30px;}
+
+	.star{color:red;}
+
+	

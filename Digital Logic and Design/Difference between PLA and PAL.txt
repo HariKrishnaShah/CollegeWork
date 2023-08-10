@@ -1,0 +1,23 @@
+PLA - Programmable Logic Array
+Programmable and and programmable or
+no. of and gate = no. of total min terms(without repeating)
+no. of or gates = no. of functions
+y = ab + a'b + ac
+z = ab + a'b' + ab' + bc
+
+so no. of and gates = 6
+no. of or gates = 2
+
+
+---------------------------------------------------------------------------------------------
+PAL- Programmable Array Logic
+programmable and and fixed or
+no. of and gates = (Highest number of min term in a function * no. of variables)
+no. of or gates = no. of functions
+
+for example:
+y = ab + a'b + ac
+z = ab + a'b' + ab' + bc
+
+so no. of and gates = (4*3) = 12
+no. of or gates = 2

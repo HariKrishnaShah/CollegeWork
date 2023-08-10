@@ -1,0 +1,39 @@
+@import 'var';
+@import 'head';
+
+*{margin:0px; padding:0px;}
+.main{
+	width:$w + 200px;
+	background:$bg;
+	height:$w +200px;
+
+	.sub-1{
+		width:200px + 100px;
+		height:200px +100px;
+
+	}
+
+	.sub-2{
+		@extend .sub-1;
+		background:blue;
+		color:$color;
+		text-align:center;
+		line-height:200px;
+
+		&:hover{
+			background:red;
+		}
+
+	}
+}
+
+@mixin ggg($wg, $hg, $cg, $b){
+	width:$wg;
+	height:$hg;
+	color:$cg;
+	@extend .sub-1;
+}
+
+.sub-3{
+	@include ggg(400px, 400px, red, yellow)
+}

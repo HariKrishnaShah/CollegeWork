@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VIT Bay</title>
+<link rel = "stylesheet" href = "css/cssfile.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="OwlCarousel/dist/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="OwlCarousel/dist/assets/owl.carousel.css">
+<link rel="stylesheet" href="OwlCarousel/dist/assets/owl.theme.default.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id = "main">
+		<div id = "navbar">
+				<a href = "index.html"><img src = "img/vbay.png" id = "logo"></a>
+				<div id = "search-box">
+					<input type = "text" name = "search" id = "search" placeholder = "Search Anything">
+					<a href = "#"><i class="fa fa-search" aria-hidden="true"></i></a>
+				</div>
+				<div id = "ad-post">
+					<a href = "tosell.html"><span class ="center">Post ad<span id = "plus-icon"><i class="fa fa-plus-square-o" aria-hidden="true"></i></span></span></a>
+				</div>
+				<div id = "login" class = "navitem">
+					<a href = "login.html" class= "navtext">Login</a>
+				</div>
+				<div class = "navitem" id = "register">
+					<a href = "signup.html" class= "navtext">Register</a>
+				</div>
+		</div>
+		<div class = "bannerad">
+			<img src = "img/bannerad.gif">
+		</div>
+		<div class = "content">
+			<div class = "category">
+				<div class = "catintro">
+					<h2><span id = "caticon"><i class="fa fa-list-ul" aria-hidden="true"></i></span> Category</h2>
+				</div>
+				<div class = "categoryItem">
+					<div class = "item" id ="itema" onclick = "showa()">
+						<div>
+							<span class = "iItem" id = "iiteama"><img src = "img/tshirt.png" class = "iItemIcon">Apparels and Accessories</span>
+						</div>
+						<div class = "itemIcon">
+						<span class = "iIcon"><img src = "img/arrow.png" class = "drop" id ="iIcona"></span>
+					</div>
+					</div>
+					<div id = "subitema" class = "subitem">
+							<ul>
+								<li><a href = "#">T-Shirt</a></li>
+								<li><a href = "#">Pants</a></li>
+								<li><a href = "#">Suit</a></li>
+								<li><a href = "#">Saree</a></li>
+								<li><a href = "#">Men's Accessories</a></li>
+								<li><a href = "#">Watches</a></li>
+								<li><a href = "#">Childrens' Clothings</a></li>
+								<li><a href = "#">Jewellery</a></li>
+								<li><a href = "#">Sunglasses</a></li>
+								<li><a href = "#">Women's Accessories</a></li>
+							</ul>
+					</div><!--subitem-->
+				</div>
+				<div class = "categoryItem">
+					<div class = "item" onclick = "showb()">
+						<div>
+							<span class = "iItem"><img src = "img/tire.png" class = "iItemIcon" id = "iiteamb">Automobiles</span>
+						</div>
+						<div class = "itemIcon">
+						<span class = "iIcon"><img src = "img/arrow.png" id ="iIconb"></span>
+						</div>
+					</div>
+					<div id = "subitemb" class = "subitem">
+							<ul>
+								<li><a href = "#">Car</a></li>
+								<li><a href = "#">Bike</a></li>
+								<li><a href = "#">Scooter</a></li>
+							</ul>
+					</div><!--subitem-->
+				</div>
+				<div class = "categoryItem">
+					<div class = "item" onclick = "showc()">
+						<div>
+							<span class = "iItem"><img src = "img/smartphone.png" class = "iItemIcon" id = "iiteamc">Phone and Accessories</span>
+						</div>
+						<div class = "itemIcon">
+						<span class = "iIcon"><img src = "img/arrow.png" id ="iIconc"></span>
+						</div>
+					</div>
+					<div id = "subitemc" class = "subitem">
+							<ul>
+								<li><a href = "#">Smartphone</a></li>
+								<li><a href = "#">Feature Phone</a></li>
+								<li><a href = "#">Phone Accesories</a></li>
+							</ul>
+					</div><!--subitem-->
+				</div>
+				<div class = "categoryItem">
+					<div class = "item" onclick = "showd()">
+						<div><span class = "iItem"><img src = "img/computer.png" class = "iItemIcon" id = "iiteamd">Computer and Peripherals</span>
+						</div>
+						<div class = "itemIcon">
+						<span class = "iIcon"><img src = "img/arrow.png" id ="iIcond"></span>
+					</div>
+					</div>
+					<div id = "subitemd" class = "subitem">
+							<ul>
+								<li><a href = "#">Desktop</a></li>
+								<li><a href = "#">Laptop</a></li>
+								<li><a href = "#">Computer Accessories</a></li>
+							</ul>
+					</div><!--subitem-->
+				</div>
+				<div class = "categoryItem">
+					<div class = "item" onclick = "showe()">
+						<div>
+							<span class = "iItem"><img src = "img/book.png" class = "iItemIcon" id = "iiteame">Books</span>
+						</div>
+						<div class = "itemIcon">
+						<span class = "iIcon"><img src = "img/arrow.png" id ="iIcone"></span>
+						</div>
+					</div>
+					<div id = "subiteme" class = "subitem">
+							<ul>
+								<li><a href = "#">Self Help Books</a></li>
+								<li><a href = "#">Academic Books</a></li>
+								<li><a href = "#">Exam Preparation Books</a></li>
+							</ul>
+					</div><!--subitem-->
+				</div>
+				<div class = "categoryItem">
+					<div class = "item" onclick = "showf()">
+						<div><span class = "iItem"><img src = "img/makeupb.png" class = "iItemIcon" id = "iiteamf">Beauty</span>
+						</div>
+						<div class = "itemIcon">
+						<span class = "iIcon"><img src = "img/arrow.png" id ="iIconf"></span>
+					</div>
+					</div>
+					<div id = "subitemf" class = "subitem">
+							<ul>
+								<li><a href = "#">Makeup Powders and Creams</a></li>
+								<li><a href = "#">Facewash</a></li>
+								<li><a href = "#">Hair Products</a></li>
+							</ul>
+					</div><!--subitem-->
+				</div>
+				<div class = "categoryItem">
+					<div class = "item" onclick = "showg()">
+						<div><span class = "iItem"><img src = "img/sofa.png" class = "iItemIcon" id = "iiteamg">Furniture</span>
+						</div>
+						<div class = "itemIcon">
+						<span class = "iIcon"><img src = "img/arrow.png" id ="iIcong"></span>
+					</div>
+					</div>
+					<div id = "subitemg" class = "subitem">
+							<ul>
+								<li><a href = "#">Bed</a></li>
+								<li><a href = "#">Sofa</a></li>
+								<li><a href = "#">Almirah</a></li>
+							</ul>
+					</div><!--subitem-->
+				</div>
+				<div class = "categoryItem">
+					<div class = "item" onclick = "showh()">
+						<div>
+							<span class = "iItem"><img src = "img/plug.png" class = "iItemIcon" id = "iiteamh">Electronics, TVs and More</span>
+						</div>
+						<div class = "itemIcon">
+						<span class = "iIcon"><img src = "img/arrow.png" id ="iIconh"></span>
+					</div>
+					</div>
+					<div id = "subitemh" class = "subitem">
+							<ul>
+								<li><a href = "#">TVs</a></li>
+								<li><a href = "#">Refridgerator</a></li>
+								<li><a href = "#">Washing Machine</a></li>
+							</ul>
+					</div><!--subitem-->
+				</div>
+				<div class = "categoryItem">
+					<div class = "item" onclick = "showi()">
+						<div>
+							<span class = "iItem"><img src = "img/estate.png" class = "iItemIcon" id = "iiteami">Real Estate</span>
+						</div>
+						<div class = "itemIcon">
+						<span class = "iIcon"><img src = "img/arrow.png" id ="iIconi"></span>
+					</div>
+					</div>
+					<div id = "subitemi" class = "subitem">
+							<ul>
+								<li><a href = "#">Land</a></li>
+								<li><a href = "#">House</a></li>
+								<li><a href = "#">Flat</a></li>
+							</ul>
+					</div><!--subitem-->
+				</div>
+				<div class = "categoryItem">
+					<div class = "item" onclick = "showj()">
+						<div>
+							<span class = "iItem"><img src = "img/pawprint.png" class = "iItemIcon" id = "iiteamj">Pets and Care</span>
+						</div>
+						<div class = "itemIcon">
+						<span class = "iIcon"><img src = "img/arrow.png" id ="iIconj"></span>
+					</div>
+					</div>
+					<div id = "subitemj" class = "subitem">
+							<ul>
+								<li><a href = "#">Pet's Medicine</a></li>
+								<li><a href = "#">Pet's Accesories</a></li>
+								<li><a href = "#">Pet's Food</a></li>
+							</ul>
+					</div><!--subitem-->
+				</div>
+				<div class = "categoryItem">
+					<div class = "item" onclick = "showk()">
+						<div>
+							<span class = "iItem"><img src = "img/football.png" class = "iItemIcon" id = "iiteamk">Sports and Fitness</span>
+						</div>
+						<div class = "itemIcon">
+						<span class = "iIcon"><img src = "img/arrow.png" id ="iIconk"></span>
+					</div>
+					</div>
+					<div id = "subitemk" class = "subitem">
+							<ul>
+								<li><a href = "#">Sport's Equipment</a></li>
+								<li><a href = "#">Gymn Equipment</a></li>
+								<li><a href = "#">Fitness Foods</a></li>
+							</ul>
+					</div><!--subitem-->
+				</div>
+				<div class = "categoryItem">
+					<div class = "item" onclick = "showl()">
+						<div>
+							<span class = "iItem"><img src = "img/games.png" class = "iItemIcon" id = "iiteaml">Toys and Games</span>
+						</div>
+						<div class = "itemIcon">
+						<span class = "iIcon"><img src = "img/arrow.png" id ="iIconl"></span>
+					</div>
+					</div>
+					<div id = "subiteml" class = "subitem">
+							<ul>
+								<li><a href = "#">Digital Game Disks</a></li>
+								<li><a href = "#">Kid's Toys</a></li>
+								<li><a href = "#">Electronic Toys</a></li>
+							</ul>
+					</div><!--subitem-->
+				</div>
+				<div class = "categoryItem">
+					<div class = "item" onclick = "showm()">
+						<div>
+							<span class = "iItem"><img src = "img/service.png" class = "iItemIcon" id = "iiteamm">Services</span>
+						</div>
+						<div class = "itemIcon">
+						<span class = "iIcon"><img src = "img/arrow.png" id ="iIconm"></span>
+					</div>
+					</div>
+					<div id = "subitemm" class = "subitem">
+							<ul>
+								<li><a href = "#">Web Development Services</a></li>
+								<li><a href = "#">App Developer</a></li>
+								<li><a href = "#">UI/UX Development</a></li>
+								<li><a href = "#">Game Developer</a></li>
+								<li><a href = "#">Internships</a></li>
+							</ul>
+					</div><!--subitem-->
+				</div>
+				<div class = "categoryItem">
+					<div class = "item" onclick = "shown()">
+						<div>
+							<span class = "iItem"><img src = "img/guitar.png" class = "iItemIcon" id = "iiteamn">Musical Instruments</span>
+						</div>
+						<div class = "itemIcon">
+						<span class = "iIcon"><img src = "img/arrow.png" id ="iIconn"></span>
+					</div>
+					</div>
+					<div id = "subitemn" class = "subitem">
+							<ul>
+								<li><a href = "#">Guitar</a></li>
+								<li><a href = "#">Piano</a></li>
+								<li><a href = "#">Violin</a></li>
+							</ul>
+					</div><!--subitem-->
+				</div>
+				<div class = "categoryItem">
+					<div class = "item" onclick = "showo()">
+						<div>
+							<span class = "iItem"><img src = "img/tour.png" class = "iItemIcon" id = "iiteamo">Travel and Tours</span>
+						</div>
+						<div class = "itemIcon">
+						<span class = "iIcon"><img src = "img/arrow.png" id ="iIcono"></span>
+					</div>
+					</div>
+					<div id = "subitemo" class = "subitem">
+							<ul>
+								<li><a href = "#">Bus Travel</a></li>
+								<li><a href = "#">Plane Tickets</a></li>
+								<li><a href = "#">Ship Travel</a></li>
+								<li><a href = "#">Tour Packages</a></li>
+							</ul>
+					</div><!--subitem-->
+				</div>
+			</div><!--Category End-->
+
+			
+			<div class = "adcontent">
+				<div class = "owl-carousel owl-theme">
+					<div class = "item"><img src = "img/banner1.jpg"></div>
+					<div class = "item"><img src = "img/hariad.png"></div>
+					<div class = "item"><img src = "img/1.png"></div>
+					<div class = "item"><img src = "img/banner2.jpg"></div>
+					<div class = "item"><img src = "img/2.png"></div>
+					<div class = "item"><img src = "img/banner3.jpg"></div>
+					<div class = "item"><img src = "img/banner4.jpg"></div>
+					<div class = "item"><img src = "img/3.png"></div>
+					<div class = "item"><img src = "img/banner5.png"></div>
+					<div class = "item"><img src = "img/banner6.png"></div>
+					<div class = "item"><img src = "img/banner7.gif"></div>
+				</div>
+				<div class = "products">
+					<h2 id = "product-intro">Our Products</h2>
+					<div class = "listings">
+						<div class = "product">
+							<div class = "image"><img src = "img/BICY.png"></div>
+							<div class = "productname">Bicycle</div>
+							<div class = "price">Rs 1000</div>
+							<div class = "cart"><a href = "bicycle.html">View Details</a></div>
+						</div><!--product-->
+						<div class = "product">
+							<div class = "image"><img src = "img/BUCKET.jpg"></div>
+							<div class = "productname">Bucket</div>
+							<div class = "price">Rs 599</div>
+							<div class = "cart"><a href = "bucket.html">View Details</a></div>
+						</div><!--product-->
+						<div class = "product">
+							<div class = "image"><img src = "img/LAUNDRY.png"></div>
+							<div class = "productname">Laundry Bag</div>
+							<div class = "price">Rs 199</div>
+							<div class = "cart"><a href = "#">View Details</a></div>
+						</div><!--product-->
+						<div class = "product">
+							<div class = "image"><img src = "img/matresss.png"></div>
+							<div class = "productname">Matress</div>
+							<div class = "price">Rs 1999</div>
+							<div class = "cart"><a href = "mattress.html">View Details</a></div>
+						</div><!--product-->
+						<div class = "product">
+							<div class = "image"><img src = "img/laptop.png"></div>
+							<div class = "productname">Acer Laptop</div>
+							<div class = "price">Rs 99999</div>
+							<div class = "cart"><a href = "#">View Details</a></div>
+						</div><!--product-->
+						<div class = "product">
+							<div class = "image"><img src = "img/java.png"></div>
+							<div class = "productname">Java Developer Required</div>
+							<div class = "price">Salary: Negotiable</div>
+							<div class = "cart"><a href = "#">View Details</a></div>
+						</div><!--product-->
+						<div class = "product">
+							<div class = "image"><img src = "img/dataminingbook.jpeg"></div>
+							<div class = "productname">Data Mining Book</div>
+							<div class = "price">Rs 299</div>
+							<div class = "cart"><a href = "#">View Details</a></div>
+						</div><!--product-->
+						<div class = "product">
+							<div class = "image"><img src = "img/nikeair3.png"></div>
+							<div class = "productname">Nike Air Shoes</div>
+							<div class = "price">Rs 4999</div>
+							<div class = "cart"><a href = "#">View Details</a></div>
+						</div><!--product-->
+						<div class = "product">
+							<div class = "image"><img src = "img/cricketbat.jpg"></div>
+							<div class = "productname">MRF Cricket Bat</div>
+							<div class = "price">Rs 999</div>
+							<div class = "cart"><a href = "#">View Details</a></div>
+						</div><!--product-->
+					</div><!--listings-->
+					<div class = "nextpage">
+						<a href = "#"><div class = "page active"><< Previous</div></a>
+						<a href = "#"><div class = "page active">1</div></a>
+						<a href = "#"><div class = "page">2</div></a>
+						<a href = "#"><div class = "page">3</div></a>
+						<a href = "#"><div class = "page active">Next Page >></div></a>
+					</div>
+				</div><!--products-->
+			</div><!--adcontent-->
+		</div><!--Content end-->
+		<div class = "footer">
+			<div class = "end">
+			<a href = "aboutus.html"><div class = "enditem">About US</div></a>
+			<a href = "#"><div class = "enditem">Terms of Use</div></a>
+			<a href = "#"><div class = "enditem">Saftery Tips</div></a>
+			<a href = "#"><div class = "enditem">FAQs</div></a>
+			<a href = "#"><div class = "enditem">Posting Rules</div></a>
+			<a href = "contact us.html"><div class = "enditem">Contact Us</div></a>
+			<a href = "#"><div class = "enditem">Report Bugs</div></a>
+		</div>
+		<div class = "copyright">
+			<p><span id = "cc"><i class="fa fa-copyright" aria-hidden="true"></i></span>All Rights Reserved</p>
+		</div>
+		</div>
+		
+
+	</div><!--main end-->
+		<script src="jquery.js"></script>
+		<script src = "javascript/jsfile.js"></script>
+		<script src = "OwlCarousel/dist/owl.carousel.js"></script>
+</body>
+</html>
